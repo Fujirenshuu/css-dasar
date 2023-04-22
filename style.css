@@ -1,0 +1,87 @@
+body {
+  background-color: cadetblue;
+  display: flex;
+  justify-content: center;
+}
+
+.panel {
+  background-color: aliceblue;
+  border-radius: 10px;
+  padding: 15px 25px;
+  width: 100vh;
+  max-width: 960px;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  text-transform: uppercase;
+}
+
+.pricing-plan {
+  border-bottom: 1px solid #fff;
+}
+
+.pricing-plan:last-child {
+  border-bottom: none;
+}
+
+.pricing-img {
+  margin-bottom: 25px;
+  max-width: 100%;
+}
+
+.pricing-header {
+  color: #888;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.pricing-features {
+  margin: 50px 0 25px;
+  color: blue;
+}
+.pricing-features-item {
+  font-weight: 600;
+  letter-spacing: 1px;
+  font-size: 12px;
+  line-height: 1.5;
+  padding: 15px 0;
+  border-top: 1px solid #fff;
+}
+.pricing-features-item:last-child {
+  border-bottom: 1px solid #fff;
+}
+.pricing-price {
+  color: cadetblue;
+  display: block;
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.pricing-button {
+  border: 1px solid #9dd1ff;
+  border-radius: 10px;
+  color: aqua;
+  display: inline-block;
+  padding: 15px 35px;
+  text-decoration: none;
+  margin: 25px 0;
+}
+
+.pricing-button:focus .pricing-button:hover {
+  background-color: #fff;
+}
+
+.pricing-button .is-featured:focus .pricing-button .is-featured:hover {
+  background-color: aqua;
+  color: white;
+}
+.pricing-button .is-featured {
+  background-color: lightseagreen;
+  color: white;
+}
+
+@media (min-width: 900px) {
+  .panel {
+    flex-direction: row;
+  }
+}
